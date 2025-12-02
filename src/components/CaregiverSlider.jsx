@@ -14,7 +14,7 @@ export default function CaregiverSlider() {
   const caregivers = [
     {
       img: SarahImg,
-      
+
       rating: 4.5,
       experience: "Sitter with 10 years experience",
       review:
@@ -24,7 +24,7 @@ export default function CaregiverSlider() {
     },
     {
       img: AllexusImg,
-      
+
       rating: 5,
       experience: "Nanny with 7 years experience",
       review:
@@ -34,7 +34,7 @@ export default function CaregiverSlider() {
     },
     {
       img: KellyImg,
-      
+
       rating: 5,
       experience: "Senior caregiver with 10 years experience",
       review:
@@ -44,7 +44,7 @@ export default function CaregiverSlider() {
     },
     {
       img: KellyImg,
-      
+
       rating: 5,
       experience: "Senior caregiver with 10 years experience",
       review:
@@ -68,8 +68,8 @@ export default function CaregiverSlider() {
       <Swiper
         modules={[Navigation, Pagination]}
         slidesPerView={3}
-        spaceBetween={25}
-        centeredSlides={true}
+        spaceBetween={10}       // Remove extra gap
+        centeredSlides={false} // Remove centering
         navigation
         pagination={{ clickable: true }}
         className="caregiver-swiper"
@@ -81,10 +81,10 @@ export default function CaregiverSlider() {
       >
         {caregivers.map((c, i) => (
           <SwiperSlide key={i}>
-            <div className="card caregiver-card shadow rounded-4 overflow-hidden">
+            <div className="card caregiver-card  rounded-4 overflow-hidden">
               <img src={c.img} className="w-100" alt={c.name} />
 
-              <div className="p-3 text-start">
+              <div className="cardmain p-3 text-start">
                 <h5 className="fw-bold mb-0">{c.name}</h5>
                 <p className="text-muted small">{c.title}</p>
 

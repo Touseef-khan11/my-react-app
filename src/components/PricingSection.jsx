@@ -27,7 +27,7 @@ export default function PricingSection() {
             <div className="price-card">
               <h5 className="fw-bold mb-1">Basic</h5>
               <p className="text-muted">Perfect for getting started</p>
-              <h2 className="fw-bold mb-3">Free</h2>
+              <h2 className="fw-bold mb-3 mt-2">Free</h2>
 
               <button className="btn btn-light w-100 mb-4 fw-semibold shadow-sm">
                 Get started
@@ -50,7 +50,7 @@ export default function PricingSection() {
               <h5 className="fw-bold mt-3">Premium</h5>
               <p className="text-muted">Most popular choice for families</p>
 
-              <h2 className="fw-bold mb-3">
+              <h2 className="fw-bold mb-3 mt-2">
                 $39 <span className="fs-5 text-muted">/month</span>
               </h2>
 
@@ -75,7 +75,7 @@ export default function PricingSection() {
               <h5 className="fw-bold mb-1">Premium Plus</h5>
               <p className="text-muted">Complete peace of mind</p>
 
-              <h2 className="fw-bold mb-3">
+              <h2 className="fw-bold mb-3 mt-2">
                 $59 <span className="fs-5 text-muted">/month</span>
               </h2>
 

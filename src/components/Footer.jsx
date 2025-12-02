@@ -129,9 +129,9 @@ export default function Footer() {
                     <hr className="footer-dividerr" />
 
                     {/* Bottom section */}
-                    <div className="d-flex justify-content-between small pt-3 pb-2 bottom-footer flex-wrap">
-                        <div>© 2025 TempsCare. All rights reserved.</div>
-                        <div className="d-flex gap-3 flex-wrap">
+                    <div className="footer-col d-flex justify-content-between small pt-3 pb-2 bottom-footer flex-wrap">
+                        <div className="footertext">© 2025 TempsCare. All rights reserved.</div>
+                        <div className="footertext d-flex gap-3 flex-wrap">
                             <a href="#">Privacy Policy</a>
                             <a href="#">Terms of Service</a>
                             <span>Powered by Convexds</span>

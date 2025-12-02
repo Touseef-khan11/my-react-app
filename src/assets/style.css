@@ -24,6 +24,15 @@ h1 {
   font-size: 48px;
 }
 
+
+@media (max-width: 576px) {
+
+  /* Mobile styles here */
+  h1 {
+    font-size: 35px;
+  }
+}
+
 .btn {
   font-size: 16px;
   font-weight: 600;
@@ -272,6 +281,12 @@ Responsive Styles
   border: 1.5px solid #d7eeda;
 }
 
+.cardmain {
+  display: flex;
+  gap: 10px !important;
+  flex-direction: column;
+}
+
 .badge {
   font-size: 13px;
 }
@@ -308,6 +323,19 @@ Responsive Styles
 .position-absolute.badge {
   padding: 0.5rem 0.75rem;
   border-radius: 0.75rem;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  svg {
+    width: 30% !important;
+    height: 100%;
+    object-fit: contain;
+    transform-origin: center;
+    fill: currentColor;
+    pointer-events: none;
+  }
 }
 
 
@@ -464,7 +492,7 @@ Responsive Styles
   background: #fff;
   border-radius: 18px;
   padding: 30px 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
   transition: transform .2s ease;
 }
 
@@ -509,7 +537,7 @@ Responsive Styles
   background: #fff;
   border-radius: 16px;
   padding: 25px 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 }
 
 .text-purple {
@@ -518,9 +546,9 @@ Responsive Styles
 
 
 ul.list-unstyled.text-start.px-3 {
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* service categories */
@@ -593,18 +621,18 @@ ul.list-unstyled.text-start.px-3 {
 
 .grid-img {
   width: 100%;
-  height: 110px;
+  /* height: 110px; */
   object-fit: cover;
   border-radius: 14px;
 }
 
-.large-img {
+/* .large-img {
   height: 130px;
-}
+} */
 
-.small-img {
+/* .small-img {
   height: 130px;
-}
+} */
 
 /* Mobile App Card */
 .mobile-app-card {
@@ -614,6 +642,44 @@ ul.list-unstyled.text-start.px-3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 160px;
+}
+
+@media (max-width: 768px) {
+  /* phones and small tablets */
+  /* Mobile styles here */
+
+  .mobile-app-card {
+    background: linear-gradient(90deg, #10B981, #059669);
+    padding: 18px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  /* Mobile styles here */
+  .tex-width {
+    width: 100%;
+  }
+
+  .findtheperfectsec h1 {
+    text-align: center;
+  }
+
+  .newsletter-section {
+    background: linear-gradient(90deg, #0e8a52, #0f6f48);
+    padding: 60px 20px !important;
+  }
+
+  .footer-col {
+    justify-content: center !important;
+  }
 }
 
 .newsletter-section {
@@ -643,4 +709,16 @@ ul.list-unstyled.text-start.px-3 {
 .badge {
   background-color: #ECFDF5;
   color: #047857;
+}
+
+.footertext {
+  color: #9CA3AF;
+}
+
+.footertext a {
+  color: #9CA3AF;
+}
+
+.footertext span {
+  color: #9CA3AF;
 }
