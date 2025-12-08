@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import LogoImage from "../assets/images/logo.png";
 
 export default function Header() {
@@ -26,19 +26,19 @@ export default function Header() {
           <nav className="nav-links d-flex align-items-center gap-3">
 
             <div className="dropdown">
-              <Link href="/findcare">
+              <Link to="/findcare">
                 <button className="btn btn-light dropdown-toggle custom-btn">Find care</button>
               </Link>
             </div>
 
             <div className="dropdown">
-              <Link href="/pagecaregivers">
+              <Link to="/pagecaregivers">
                 <button className="btn btn-light dropdown-toggle custom-btn">For Caregivers</button>
               </Link>
             </div>
 
-            <Link href="/safety" className="nav-link custom-link">Safety</Link>
-            <Link href="/community" className="nav-link custom-link">Community</Link>
+            <Link to="/safety" className="nav-link custom-link">Safety</Link>
+            <Link to="/community" className="nav-link custom-link">Community</Link>
 
           </nav>
 
