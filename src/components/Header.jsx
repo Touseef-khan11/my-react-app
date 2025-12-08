@@ -53,7 +53,7 @@
 // }
 
 import React, { useState } from "react";
-import '../assets/style.css';
+// import '../assets/style.css';
 import LogoImage from '../assets/images/logo.png';
 
 export default function Header() {
@@ -79,13 +79,17 @@ export default function Header() {
         <div className={`nav-right ${menuOpen ? "open" : ""}`}>
           <nav className="nav-links d-flex align-items-center gap-3">
             <div className="dropdown">
-              <button className="btn btn-light dropdown-toggle custom-btn" type="button">Find care</button>
+              <a href="/findcare">
+                <button className="btn btn-light dropdown-toggle custom-btn" type="button">Find care</button>
+              </a>
             </div>
             <div className="dropdown">
-              <button className="btn btn-light dropdown-toggle custom-btn" type="button">For caregivers</button>
+              <a href="/PageCaregivers">
+                <button className="btn btn-light dropdown-toggle custom-btn" type="button">For Caregivers</button>
+              </a>
             </div>
             <a href="#" className="nav-link custom-link">Safety</a>
-            <a href="#" className="nav-link custom-link">Community</a>
+            <a href="/community" className="nav-link custom-link">Community</a>
           </nav>
 
           <div className="d-flex align-items-center gap-2 right-buttons">

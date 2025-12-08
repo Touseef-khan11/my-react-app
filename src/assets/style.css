@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif !important;
 }
 
 
@@ -34,10 +34,10 @@ h1 {
 }
 
 .btn {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 16px !important;
+  font-weight: 600 !important;
   color: #000000;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif !important;
 
 
 }
@@ -117,18 +117,18 @@ h1 {
 
 .sign-in-btn:hover {
   background: linear-gradient(90deg, #10B981, #059669);
-  color: white;
+  color: white !important;
 }
 
 .join-now-btn {
   background: linear-gradient(90deg, #10B981, #059669);
-  color: white;
+  color: white !important;
   font-weight: 600;
 }
 
 .join-now-btn:hover {
   background: linear-gradient(90deg, #10B981, #059669);
-  color: white;
+  color: white !important;
 }
 
 /* Hide nav-right by default on small screens */
@@ -692,18 +692,19 @@ ul.list-unstyled.text-start.px-3 {
 }
 
 .newsletter-input {
-  width: 280px;
-  border-radius: 12px;
-  border: none;
-  padding: 10px 15px;
+  width: 280px !important;
+  border-radius: 12px !important;
+  border: none !important;
+  padding: 10px 15px !important;
   font-size: 15px;
 }
 
 .newsletter-btn {
-  padding: 10px 20px;
-  border-radius: 12px;
-  font-weight: 600;
+  padding: 10px 20px !important;
+  border-radius: 12px !important;
+  font-weight: 600 !important;
   font-size: 15px;
+  color: #059669 !important;
 }
 
 .badge {
@@ -721,4 +722,554 @@ ul.list-unstyled.text-start.px-3 {
 
 .footertext span {
   color: #9CA3AF;
+}
+
+
+
+/* community page css start */
+
+
+.healthcare-section {
+  background-image: url("../assets/images/community/communityback.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+}
+
+
+
+.section-title {
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.stats-row .stat-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 30px;
+  transition: transform 0.3s ease;
+}
+
+.stats-row .stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+
+/* community events tabs section */
+
+
+/* Tabs styling */
+.nav-tabs .nav-link {
+  color: #6B7280;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0.75rem 1.5rem;
+  border: none;
+}
+
+.nav-tabs .nav-link.active {
+  color: #059669;
+  border-bottom: 3px solid #059669;
+  background-color: transparent;
+}
+
+/* Card styling */
+.event-card {
+  border: none;
+  overflow: hidden;
+}
+
+.event-card img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.event-card .badge {
+  font-size: 0.85rem;
+  padding: 0.5em 0.75em;
+}
+
+.card-text {
+  color: #374151;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.tabssection {
+  background-color: #EFF6FF !important;
+}
+
+.eventslist {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  ;
+}
+
+/* ready to join section css */
+
+.Readytojoin {
+  background-image: url("../assets/images/community/readytojoin.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+}
+
+.joinourteambtn {
+  background-color: white !important;
+  color: #059669 !important;
+  padding: 10px 20px !important;
+}
+
+.joinourteambtn:hover {
+  background-color: white !important;
+  color: #059669 !important;
+  padding: 10px 20px !important;
+}
+
+.learnmorebtn {
+  background-color: #047857 !important;
+  color: #FFFFFF !important;
+  padding: 10px 20px !important;
+}
+
+.learnmorebtn:hover {
+  background-color: #047857 !important;
+  /* border-color: #059669; */
+  color: #ffffff !important;
+}
+
+
+
+/* findcare search section  */
+
+
+.care-search-section {
+  background-color: #fff;
+}
+
+.care-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #111827;
+  /* dark gray */
+}
+
+.care-subtitle {
+  margin-top: 0.5rem;
+  color: #6b7280;
+  /* gray */
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.care-search-input .form-control {
+  border-radius: 50px 0 0 50px;
+}
+
+.care-search-input .btn {
+  border-radius: 0 50px 50px 0;
+}
+
+.care-search-input .input-group-text {
+  border-radius: 50px 0 0 50px;
+  border-right: 0;
+}
+
+
+
+
+/* findcare filters pages */
+
+/* Section BG */
+.care-section {
+  padding: 30px 0;
+  background: #f8f9fa;
+}
+
+/* Filters sidebar */
+.filters-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+}
+
+/* Caregiver card */
+.caregiver-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+.caregiver-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.caregiver-card img {
+
+  object-fit: cover;
+}
+
+.caregiver-name {
+  font-weight: 700;
+  font-size: 17px;
+  color: #111827;
+}
+
+.caregiver-rate {
+  font-weight: 700;
+  color: #00a86b;
+  font-size: 18px;
+}
+
+.caregiver-location {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.caregiver-desc {
+  margin-top: 10px;
+  color: #4b5563;
+  font-size: 14px;
+}
+
+/* Tags */
+.tag {
+  background: #e6f4ea;
+  color: #137b46;
+  padding: 3px 10px;
+  border-radius: 40px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+/* Buttons */
+.view-profile-btn {
+  width: 100%;
+  background: #00a86b;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.view-profile-btn:hover {
+  background: #008f5b;
+}
+
+.load-more-btn {
+  border: 1px solid #d1d5db;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.load-more-btn:hover {
+  background: #f3f4f6;
+}
+
+.safetybadge {
+  color: #047857 !important;
+}
+
+.communitybadge {
+  color: #047857 !important;
+
+}
+
+.input-group.care-search-input {
+  width: 484px;
+}
+
+.findcarebtn {
+  background: linear-gradient(90deg, #10B981, #059669);
+  color: white !important;
+
+}
+
+.view-profile-btn {
+  background: linear-gradient(90deg, #10B981, #059669);
+  color: white !important;
+}
+
+.load-more-btn {
+  border-radius: 20px;
+}
+
+.btn-link {
+  color: #047857 !important;
+
+}
+
+/* faqs section */
+
+
+.faq-section {
+  background-color: #f9fafb;
+}
+
+.faq-title {
+  font-weight: 700;
+  color: #1f2937;
+}
+
+/* Center divider line under title */
+.faq-divider {
+  width: 50px;
+  height: 3px;
+  background-color: #0ea5e9;
+  margin: 10px auto 0;
+  border-radius: 50px;
+}
+
+/* Each FAQ Box */
+.faq-item {
+  background: #ffffff;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #e5e7eb !important;
+  overflow: hidden;
+}
+
+/* Button (Closed default) */
+.faq-btn {
+  background: #ffffff !important;
+  border-radius: 12px;
+  padding: 15px 20px;
+  font-size: 16px;
+  color: #374151;
+  box-shadow: none !important;
+}
+
+/* Remove blue Bootstrap focus border */
+.faq-btn:focus {
+  box-shadow: none !important;
+}
+
+/* Accordion arrow icon */
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%236b7280' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") !important;
+}
+
+/* When opened */
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
+}
+
+.accordion-button:not(.collapsed) {
+  color: #047857 !important;
+}
+
+/* Accordion body */
+.accordion-body {
+  padding: 15px 20px;
+  font-size: 15px;
+  color: #4b5563;
+}
+
+
+
+/* for caregivers page */
+
+
+.caregiver-hero {
+  padding: 100px 0;
+  background-image: url("../assets/images/forcaregivers/caregiversback.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.search-bar {
+  width: 650px;
+  max-width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.search-bar .input-group-text {
+  background: #fff;
+  border: none;
+}
+
+.search-bar .form-control {
+  border: none;
+  box-shadow: none;
+}
+
+.search-btn {
+  border-radius: 0;
+  background-color: #1ea88a;
+  color: #fff;
+  font-weight: 600;
+}
+
+.caregiverstext {
+  color: #CCFBF1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .search-btn {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  .input-group {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+  }
+}
+
+
+/* caregivers listings */
+
+
+.job-section {
+  background: #f8f9fa;
+}
+
+.filter-box,
+.how-box {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.filter-title {
+  font-weight: 600;
+  color: #555;
+}
+
+.job-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.job-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.job-title {
+  margin: 4px 0;
+}
+
+.job-meta {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.price-text {
+  color: #111;
+  font-weight: 600;
+}
+
+.job-desc {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Tags */
+.tag {
+  padding: 3px 8px;
+  background: #f0f9f6;
+  color: #1a9c73;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.details-link {
+  color: #1a9c73;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* Steps */
+.how-step {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.step-number {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #e9f7f3;
+  color: #1a9c73;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.sorted-text {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Pagination */
+.pagination .page-link {
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1a9c73;
+  border: none;
+}
+
+.pagination .active .page-link {
+  background: #1a9c73;
+  color: #fff;
+}
+
+
+@media (max-width: 1025px) {
+
+  /* Mobile styles here */
+  .how-box {
+    display: none;
+  }
 }

@@ -41,7 +41,7 @@ export default function Footer() {
                             <div className="logo ">
                                 <img src={FooterLogo} alt="Doctors" className="img-fluid mb-4" />
                             </div>
-                            <p className="footer-desc text-white">
+                            <p className="footer-desc">
                                 Connecting families with trusted, background-checked caregivers in your community.
                             </p>
                             <div className="d-flex gap-2 mt-3 social-icons">

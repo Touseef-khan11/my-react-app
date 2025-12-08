@@ -28,7 +28,7 @@ export default function CaregiverSlider() {
       rating: 5,
       experience: "Nanny with 7 years experience",
       review:
-        "Allexus was wonderful with our twins. Active, knowledgeable, playful, loving, responsible. We would hire her again in a second.",
+        "Allexus was wonderful with our twins. Active, knowledgeable, playful, loving, responsible. ",
       author: "Amy V.",
       tags: ["Carpooling", "Organizing/Laundry", "Help with pets", "+3 more"],
     },

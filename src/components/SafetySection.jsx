@@ -37,7 +37,7 @@ export default function SafetySection() {
         
         {/* LEFT COLUMN */}
         <div className="col-lg-6 mb-4 mb-lg-0">
-          <span className="badge mb-2">Safety First</span>
+          <span className="badge safetybadge mb-2">Safety First</span>
 
           <h2 className="fw-bold mb-3">
             Your family's safety is our top priority
